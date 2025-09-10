@@ -26,8 +26,8 @@ def user_reservs(request):
     reservs_deatil = [
         {"name" : "Vila kordan" , "date" :'10/6/1404' , "status" : "Reserved"}
     ]
-
-    return HttpResponse(reservs_deatil)
+    result = "<br>".join([f"name: {r['name']} | date: {r['date']} | status: {r["status"]}" for r in reservs_deatil])
+    return HttpResponse(result)
 
 def user_reservs_json(request):
     reservs_deatil_json = [
