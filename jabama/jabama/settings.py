@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'residences',
     'user',
     'apartment',
+    'villa',
 ]
 
 MIDDLEWARE = [

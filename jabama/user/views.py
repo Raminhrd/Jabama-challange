@@ -36,6 +36,7 @@ def user_reservs_json(request):
 
     return JsonResponse(reservs_deatil_json , safe=False)
 
+
 def payment(request):
 
     file_path = os.path.join(settings.BASE_DIR, 'user', 'data.json')
